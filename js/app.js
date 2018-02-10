@@ -1,5 +1,6 @@
 var clock;
-
+$("#quest").hide();
+$("#que").hide();
 $(document).ready( function() {
 
 // FlipClock.js effect
