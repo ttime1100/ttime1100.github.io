@@ -15,6 +15,14 @@ input {
   color: white;
 }
 
+#quest {
+  display: none;
+}
+
+#que {
+  display: none;
+}
+
 #mar {
   height: 200px;
 }
