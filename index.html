@@ -24,7 +24,7 @@
   <li>Before you can race, you must answer a set of trivia questions<br/>
 Meanwhile, Luigi will be heading to the finish line.
   </li>
-  <li>Answer all the questions and move on to the "The Wild"</li>
+  <li>Make all the questions turn green in order to move on to the "The Wild"</li>
   <li>One bonus question will be asked before you reach the finish line! </li>
   <li>Play with friends --- Compare skills!.</li>
   <li>* Choose your answer and spell exactly how you see it or things may get shaky! *
@@ -39,12 +39,12 @@ Meanwhile, Luigi will be heading to the finish line.
 <div class="jumbotron jumbotron-fluid text-center">
 <div class="clock" style="margin-left:425px"></div>
 <div class="message display-4 text-center"></div>
-<button class="btn" type="button" id="reset">RESET</button>
+<button class="btn btn-outline-warning" type="button" id="reset">RESET</button>
 </div>
 
 <div class="container-fluid" id="t-heading">
-<h1 class="display-4 text-center">"Trivia"</h1>
-<p class="text-center">A race against the clock!!!!</p>
+<h1 class="display-4 text-center text-white">"Trivia"</h1>
+<p class="text-center text-white">A race against the clock!!!!</p>
 </div>
 
 
@@ -56,10 +56,10 @@ Meanwhile, Luigi will be heading to the finish line.
 </p>Which character was Walt Disney’s favorite?</p>
 
 <ol>
-<li>mickey mouse</li>
-<li id="first-answer">goofy</li>
-<li>donald duck</li>
-<li>minnie mouse</li>
+<li>Mickey Mouse</li>
+<li id="first-answer">Goofy</li>
+<li>Donald Duck</li>
+<li>Minnie Mouse</li>
 </ol>
 
 <input  class="form-group" type="text"name="first" id="form-one">
@@ -181,33 +181,63 @@ Meanwhile, Luigi will be heading to the finish line.
 <br/>
 
 <div class="container-fluid" id="g-heading">
-<h1 class="text-center display-4 ">"The Wild"</h1>
-<p class="text-center">Can you make it home in time?</p>
+<h1 class="text-center display-4 text-white">"The Wild"</h1>
+<p class="text-center text-white">Can you make it home in time?</p>
 </div>
 
 
 <div class="container-fluid" id="game-board">
 
+
+
+  <div class="container w-50 mr-5">
+  <div class="row w-25 h-100 float-right">
+
+    <div class"col w-25 float-right" id="finish">
+  <img  class="img-fluid h-75 mx-auto mt-2" src="./img/finish-one.webp">
+    </div>
+
+  </div>
+  </div>
+
 <div class="container">
 <div class="row">
 
-<div class="col" id="luigi">
-<img class="mt-5 img-fluid" src="./img/2389814-nsmbuluigi.png" id="luigi">
+  <div class="col w-25" id="que">
+<form id="mine" class="w-25">
+<h1>Who is your favorite artist?</h1>
+<input class="form-group" type="text" placeholder="Answer Here" id="right">
+<button class="btn" type="submit"></button>
+</form>
 </div>
+
+<div class="col" id="luigi">
+<img class="mt-5 img-fluid" src="./img/2389814-nsmbuluigi.png" id="lui">
+</div>
+
 </div>
 </div>
 
 <div class="container mt-5">
 <div class="row">
 
+  <div class="col w-25" id="quest">
+<form id="myform">
+<h1>Who is your favorite artist?</h1>
+<input class="form-group" type="text" placeholder="Answer Here" id="getitright">
+<button class="btn" type="submit"></button>
+</form>
+  </div>
+
   <div class="col" id="mario">
-  <img class="mt-5 img-fluid" src="./img/Super_Mario_3D_World.png" id="mario">
+  <img class="mt-5 img-fluid" src="./img/Super_Mario_3D_World.png" id="mar">
   </div>
 
 </div>
 </div>
 
 </div>
+
 
 
 
