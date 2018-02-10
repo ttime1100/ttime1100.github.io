@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What You Know</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/mdb.min.css">
+  <link rel="stylesheet" type="text/css" href="css/flipclock.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<div class="jumbotron jumbotron-fluid" id="header">
+<div class="container text-white">
+<h1 class="text-center display-4">What You Know ???</h1>
+<p class="text-center">Can you make it to the end with the knowledge you have?<br/> Come and test your knowledge</p>
+<h2>Rules</h2>
+<ol>
+  <li>You have 2 minutes and 30 seconds and beat Luigi</li>
+  <li>Before you can race, you must answer a set of trivia questions<br/>
+Meanwhile, Luigi will be heading to the finish line.
+  </li>
+  <li>Answer all the questions and move on to the "The Wild"</li>
+  <li>One bonus question will be asked before you reach the finish line! </li>
+  <li>Play with friends --- Compare skills!.</li>
+  <li>* Choose your answer and spell exactly how you see it or things may get shaky! *
+</li>
+<li>* When you start race PRESS LETTER P ( if Two Players Luigi control is Q ) in order to move MARIO *
+</ol>
+
+
+</div>
+</div>
+
+<div class="jumbotron jumbotron-fluid text-center">
+<div class="clock" style="margin-left:425px"></div>
+<div class="message display-4 text-center"></div>
+<button class="btn" type="button" id="reset">RESET</button>
+</div>
+
+<div class="container-fluid" id="t-heading">
+<h1 class="display-4 text-center">"Trivia"</h1>
+<p class="text-center">A race against the clock!!!!</p>
+</div>
+
+
+<div class="container-fluid h-100 text-white" id="gameboard">
+  <div class="row">
+
+    <div class="col">
+<form>
+</p>Which character was Walt Disney’s favorite?</p>
+
+<ol>
+<li>mickey mouse</li>
+<li id="first-answer">goofy</li>
+<li>donald duck</li>
+<li>minnie mouse</li>
+</ol>
+
+<input  class="form-group" type="text"name="first" id="form-one">
+<button class="btn" type="submit" id="first-button"></button>
+</form>
+    </div>
+
+    <div class="col">
+<form>
+</p>Who is the quietest Disney princess?</p>
+<ol>
+<li id="second-answer">Aurora ("Sleeping Beauty")</li>
+<li>Belle ("Beauty and the Beast")</li>
+<li>Mulan ("Mulan")</li>
+<li>Cinderella ("Cinderella")</li>
+</ol>
+
+<input  class="form-group" type="text" name="second" id="form-two">
+<button class="btn" type="button" id="two-button"></button>
+</form>
+    </div>
+
+    <div class="col">
+<form>
+</p>Which princess has dyed hair?</p>
+<ol>
+<li id="third-answer">Repunzel</li>
+<li>Belle</li>
+<li>Tiana</li>
+<li>Cinderella</li>
+</ol>
+
+<input  class="form-group" type="text" name="third" id="form-three">
+<button class="btn" type="button" id="three-button"></button>
+</form>
+    </div>
+
+
+    <div class="col">
+<form>
+</p>Pocahontas was supposed to have a talking pet _______________.</p>
+<ol>
+<li>Mockingbird</li>
+<li>Squirrel</li>
+<li id="fourth-answer">Turkey</li >
+<li>Rhino</li>
+</ol>
+
+<input  class="form-group" type="text" name="fourth" id="form-four">
+<button class="btn" type="submit" id="four-button"></button>
+</form>
+    </div>
+
+    <div class="col">
+<form>
+</p>"The Lady and the Tramp” was almost called:</p>
+<ol>
+<li>The Lady and the Tree</li>
+<li>The Lady and Homer</li>
+<li>The Lady and the Rags</li>
+<li id="fifth-answer">All</li>
+</ol>
+
+<input  class="form-group" type="text" name="fifth" id="form-five">
+<button class="btn" type="button" id="five-button"></button>
+</form>
+    </div>
+
+
+    <div class="col">
+<form>
+</p>How old is Ariel when she marries Eric in “The Little Mermaid?"</p>
+<ol>
+<li>21</li>
+<li>19</li>
+<li id="sixth-answer">16</li>
+<li>25</li>
+</ol>
+
+<input  class="form-group" type="text" name="sixth" id="form-six">
+<button class="btn" type="button" id="six-button"></button>
+</form>
+    </div>
+
+    <div class="col">
+<form>
+</p>The word “Simba” comes from which language?</p>
+<ol>
+<li>Afrikaans</li>
+<li id="seventh-answer">Swahili</li>
+<li>Turkish</li>
+<li>Mandarin</li>
+</ol>
+
+<input  class="form-group" type="text" name="seventh" id="form-seven">
+<button class="btn" type="submit" id="seven-button"></button>
+</form>
+    </div>
+
+    <div class="col">
+<form>
+</p>Disney’s beloved “Mickey Mouse” almost had a different name. What was it?</p>
+<ol>
+<li>Melvin Mouse</li>
+<li id="eigth-answer">Mortimier Mouse</li>
+<li>Marty Mouse</li>
+<li>Mike the Mouse</li>
+</ol>
+
+<input  class="form-group" type="text"name="eigth" id="form-eight">
+<button class="btn" type="submit" id="eight-button"></button>
+</form>
+    </div>
+
+</div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container-fluid" id="g-heading">
+<h1 class="text-center display-4 ">"The Wild"</h1>
+<p class="text-center">Can you make it home in time?</p>
+</div>
+
+
+<div class="container-fluid" id="game-board">
+
+<div class="container">
+<div class="row">
+
+<div class="col" id="luigi">
+<img class="mt-5 img-fluid" src="./img/2389814-nsmbuluigi.png" id="luigi">
+</div>
+</div>
+</div>
+
+<div class="container mt-5">
+<div class="row">
+
+  <div class="col" id="mario">
+  <img class="mt-5 img-fluid" src="./img/Super_Mario_3D_World.png" id="mario">
+  </div>
+
+</div>
+</div>
+
+</div>
+
+
+
+  <div id="root"></div>
+  <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="js/popper.min.js" type="text/javascript"></script>
+  <script src="js/tether.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/mdb.min.js" type="text/javascript"></script>
+  <script src="js/fontawesome-all.min.js" type="text/javascript"></script>
+  <script src="js/flipclock.min.js" type="text/javascript"></script>
+  <script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
