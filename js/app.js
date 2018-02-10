@@ -69,21 +69,74 @@ var playerTwo = {
 // Default control Player Two
 $("body").on('keypress', function(e) {
 if (e.charCode === 113) {
-
 $(playerTwo.div).animate({left:'+=10px'});
+numTwo++;
 console.log(e);
 }
-
+popOut();
 });
+
+ var numOne = 1;
+ var numTwo = 1;
 
 //Keypress for Mario object
 $("body").on('keypress', function(e) {
 if (e.charCode === 112) {
-
 $(playerOne.div).animate({left:'+=10px'});
-console.log(e);
+numOne++;
+console.log($(playerOne.div).position());
 }
 
+popUp();
+
 });
+
+// hiding pop up question
+ $("#quest").hide();
+ $("#que").hide();
+
+// function to add count for pop up question
+function popUp() {
+if (numOne === 50) {
+ $("#quest").show();
+ $("#mar").hide();
+goMar();
+}
+}
+
+function popOut() {
+  if (numTwo === 50) {
+   $("#que").show();
+   $("#lui").hide();
+  goLui();
+}
+
+}
+
+function goMar() {
+
+  $("#myform").on('submit', function(e) {
+    e.preventDefault();
+
+  if ($("#getitright").val() === "t") {
+$("#quest").hide();
+    $("#mar").show();
+  }
+
+});
+
+}
+
+  function goLui() {
+ $("#mine").on('submit', function(e) {
+      e.preventDefault();
+    if ($("#right").val() === "the") {
+    $("#que").hide();
+      $("#lui").show();
+}
+   });
+}
+
+
 
 });
