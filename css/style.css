@@ -1,0 +1,41 @@
+body {
+background-color: black;
+}
+
+#header {
+  background-image: url("../img/backgroundresume.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input {
+  color: white;
+}
+
+#mario {
+  height: 200px;
+}
+
+#luigi {
+  height: 250px;
+}
+
+
+#game-board {
+background-image: url("../img/board.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 600px;
+
+}
+
+img {
+  display: block;
+
+}
+
+#timer {
+  background-color: green;
+}
