@@ -1,9 +1,9 @@
 var clock;
-$("#quest").hide();
-$("#que").hide();
+
 $(document).ready( function() {
 
 // FlipClock.js effect
+$("#start").on('click', function() {
   clock = $('.clock').FlipClock(150, {
           clockFace: 'MinuteCounter',
           countdown: true,
@@ -17,6 +17,8 @@ $(document).ready( function() {
             }
           }
       });
+    });
+
 
       $("#reset").on('click', function() {
 
@@ -72,9 +74,9 @@ $("body").on('keypress', function(e) {
 if (e.charCode === 113) {
 $(playerTwo.div).animate({left:'+=10px'});
 numTwo++;
-console.log(e);
 }
 popOut();
+finWinTwo ()
 });
 
  var numOne = 1;
@@ -89,8 +91,28 @@ console.log($(playerOne.div).position());
 }
 
 popUp();
+finWinOne();
 
 });
+
+var playerOnePos = $(playerOne.div).position();
+
+function finWinOne () {
+if (numOne === 85) {
+  $(playerOne.div).addClass("animated bounce infinite");
+  $(playerOne.div).append("<h1 class='text-primary'>WINNER!!</h1>");
+$(playerOne.div).stop();
+}
+
+}
+
+function finWinTwo () {
+if (numTwo === 85) {
+  $(playerTwo.div).addClass("animated bounce infinite");
+  $(playerTwo.div).append("<h1 class='text-primary'>WINNER!!<h1>");
+  $(playerTwo.div).stop();
+}
+}
 
 // hiding pop up question
  $("#quest").hide();
@@ -119,7 +141,7 @@ function goMar() {
   $("#myform").on('submit', function(e) {
     e.preventDefault();
 
-  if ($("#getitright").val() === "t") {
+  if ($("#getitright").val() === "Reagan") {
 $("#quest").hide();
     $("#mar").show();
   }
@@ -131,7 +153,7 @@ $("#quest").hide();
   function goLui() {
  $("#mine").on('submit', function(e) {
       e.preventDefault();
-    if ($("#right").val() === "the") {
+    if ($("#right").val() === "Obama") {
     $("#que").hide();
       $("#lui").show();
 }

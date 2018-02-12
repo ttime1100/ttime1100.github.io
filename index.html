@@ -20,16 +20,14 @@
 <p class="text-center">Can you make it to the end with the knowledge you have?<br/> Come and test your knowledge</p>
 <h2>Rules</h2>
 <ol>
-  <li>You have 2 minutes and 30 seconds and beat Luigi</li>
-  <li>Before you can race, you must answer a set of trivia questions<br/>
-Meanwhile, Luigi will be heading to the finish line.
-  </li>
+  <li>You have 2 minutes and 30 seconds complete the WYK race!</li>
+  <li>Before you can race, you must answer a set of trivia questions</li>
   <li>Make all the questions turn green in order to move on to the "The Wild"</li>
-  <li>One bonus question will be asked before you reach the finish line! </li>
-  <li>Play with friends --- Compare skills!.</li>
-  <li>* Choose your answer and spell exactly how you see it or things may get shaky! *
-</li>
-<li>* When you start race PRESS LETTER P ( if Two Players Luigi control is Q ) in order to move MARIO *
+  <li>One bonus question will be asked during the race before you reach the finish line(must CAPATILIZE first letter)!</li>
+  <li>Play with friends --- Compare skills!</li>
+  <li>* Choose your answer and spell exactly how you see it or things may get shaky! *</li>
+<li> Mario control: Press P</li>
+<li>Luigi control: Press Q</li>
 </ol>
 
 
@@ -37,8 +35,9 @@ Meanwhile, Luigi will be heading to the finish line.
 </div>
 
 <div class="jumbotron jumbotron-fluid text-center">
-<div class="clock" style="margin-left:425px"></div>
+<div class="clock"></div>
 <div class="message display-4 text-center"></div>
+<button class="btn btn-outline-primary" type="button" id="start">START</button>
 <button class="btn btn-outline-warning" type="button" id="reset">RESET</button>
 </div>
 
@@ -63,7 +62,7 @@ Meanwhile, Luigi will be heading to the finish line.
 </ol>
 
 <input  class="form-group" type="text"name="first" id="form-one">
-<button class="btn" type="submit" id="first-button"></button>
+<button class="btn btn-outline-warning" type="submit" id="first-button">Submit</button>
 </form>
     </div>
 
@@ -78,7 +77,7 @@ Meanwhile, Luigi will be heading to the finish line.
 </ol>
 
 <input  class="form-group" type="text" name="second" id="form-two">
-<button class="btn" type="button" id="two-button"></button>
+<button class="btn btn-outline-primary" type="button" id="two-button">Submit</button>
 </form>
     </div>
 
@@ -93,7 +92,7 @@ Meanwhile, Luigi will be heading to the finish line.
 </ol>
 
 <input  class="form-group" type="text" name="third" id="form-three">
-<button class="btn" type="button" id="three-button"></button>
+<button class="btn btn-outline-warning" type="button" id="three-button">Submit</button>
 </form>
     </div>
 
@@ -109,7 +108,7 @@ Meanwhile, Luigi will be heading to the finish line.
 </ol>
 
 <input  class="form-group" type="text" name="fourth" id="form-four">
-<button class="btn" type="submit" id="four-button"></button>
+<button class="btn btn-outline-primary" type="submit" id="four-button">Submit</button>
 </form>
     </div>
 
@@ -124,7 +123,7 @@ Meanwhile, Luigi will be heading to the finish line.
 </ol>
 
 <input  class="form-group" type="text" name="fifth" id="form-five">
-<button class="btn" type="button" id="five-button"></button>
+<button class="btn btn-outline-warning" type="button" id="five-button">Submit</button>
 </form>
     </div>
 
@@ -140,12 +139,12 @@ Meanwhile, Luigi will be heading to the finish line.
 </ol>
 
 <input  class="form-group" type="text" name="sixth" id="form-six">
-<button class="btn" type="button" id="six-button"></button>
+<button class="btn btn-outline-primary" type="button" id="six-button">Submit</button>
 </form>
     </div>
 
     <div class="col">
-<form>
+<form id="simba">
 </p>The word “Simba” comes from which language?</p>
 <ol>
 <li>Afrikaans</li>
@@ -155,13 +154,13 @@ Meanwhile, Luigi will be heading to the finish line.
 </ol>
 
 <input  class="form-group" type="text" name="seventh" id="form-seven">
-<button class="btn" type="submit" id="seven-button"></button>
+<button class="btn btn-outline-warning" type="submit" id="seven-button">Submit</button>
 </form>
     </div>
 
-    <div class="col">
-<form>
-</p>Disney’s beloved “Mickey Mouse” almost had a different name. What was it?</p>
+    <div class="col" id="that">
+<form class="w-25" id="disney">
+</p>Disney’s beloved “Mickey Mouse” almost had a different name.<br/> What was it?</p>
 <ol>
 <li>Melvin Mouse</li>
 <li id="eigth-answer">Mortimier Mouse</li>
@@ -169,8 +168,8 @@ Meanwhile, Luigi will be heading to the finish line.
 <li>Mike the Mouse</li>
 </ol>
 
-<input  class="form-group" type="text"name="eigth" id="form-eight">
-<button class="btn" type="submit" id="eight-button"></button>
+<input  class="form-group" type="text" name="eigth" id="form-eight">
+<button class="btn btn-outline-primary" type="submit" id="eight-button">Submit</button>
 </form>
     </div>
 
@@ -194,7 +193,7 @@ Meanwhile, Luigi will be heading to the finish line.
   <div class="row w-25 h-100 float-right">
 
     <div class"col w-25 float-right" id="finish">
-  <img  class="img-fluid h-75 mx-auto mt-2" src="./img/finish-one.webp">
+  <img  class="img-fluid h-75 mx-auto mt-5 ml-5" src="./img/finish-one.webp">
     </div>
 
   </div>
@@ -204,10 +203,10 @@ Meanwhile, Luigi will be heading to the finish line.
 <div class="row">
 
   <div class="col w-25" id="que">
-<form id="mine" class="w-25">
-<h1>Who is your favorite artist?</h1>
+<form id="mine" class="w-25 h-25">
+<h1 class="text-white">Who is the 44th President last name?</h1>
 <input class="form-group" type="text" placeholder="Answer Here" id="right">
-<button class="btn" type="submit"></button>
+<button class="btn btn-outline-primary text-white" type="submit">Submit</button>
 </form>
 </div>
 
@@ -222,10 +221,10 @@ Meanwhile, Luigi will be heading to the finish line.
 <div class="row">
 
   <div class="col w-25" id="quest">
-<form id="myform">
-<h1>Who is your favorite artist?</h1>
-<input class="form-group" type="text" placeholder="Answer Here" id="getitright">
-<button class="btn" type="submit"></button>
+<form id="myform" class="w-25 h-25">
+<h1 class="text-white">What is the 40th President last name?</h1>
+<input class="form-group text-white" type="text" placeholder="Answer Here" id="getitright">
+<button class="btn btn-outline-warning text-warning" type="submit">Submit</button>
 </form>
   </div>
 
