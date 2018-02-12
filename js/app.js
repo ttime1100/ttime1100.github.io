@@ -1,7 +1,7 @@
 var clock;
 
 $(document).ready( function() {
-
+$(".clock").hide();
 // FlipClock.js effect
 $("#start").on('click', function() {
   clock = $('.clock').FlipClock(150, {
