@@ -49,3 +49,69 @@ img {
 #timer {
   background-color: green;
 }
+
+@media screen and (max-width: 1024px) {
+#disney {
+display: inline;
+width:100px;
+
+}
+
+#simba {
+  width:250px;
+}
+
+#that {
+  width:100px;
+}
+
+.clock {
+  margin-left:325px;
+}
+
+
+
+  }
+
+@media screen and (max-width: 768px) {
+
+.clock {
+  margin-left: 200px;
+}
+
+
+}
+
+@media screen and (max-width: 425px) {
+
+.clock {
+
+margin-left:25px;
+}
+
+
+
+#finish {
+height: 400px;
+}
+
+#mar {
+  height:80px;
+}
+
+#lui {
+  height: 80px;
+  margin-top: 400px;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+
+}

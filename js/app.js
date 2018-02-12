@@ -1,5 +1,5 @@
 var clock;
-$(".clock").hide();
+
 $(document).ready( function() {
 
 // FlipClock.js effect
